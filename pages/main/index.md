@@ -1,7 +1,8 @@
 ---
 title: Hack your wrist
 slug: index
-lead: "AsteroidOS is an open-source operating system for smartwatches."
+lead: "AsteroidOS is an open-source Linux distribution for smartwatches."
+subtitle: "A Yocto distribution that uses custom components to enhance your Linux experience on smartwatches."
 layout: content
 ---
 
@@ -13,6 +14,7 @@ layout: content
   <div class="container">
     <h1>{{ title }}</h1>
     <p>{{ lead }}</p>
+    <span>{{ subtitle }}</span>
     <a class="btn btn-primary" href="{{rel 'wiki/documentation'}}" role="button">Learn more</a>
     <a class="btn btn-primary" href="{{rel 'install'}}" role="button">Get AsteroidOS</a>
   </div>

@@ -61,9 +61,9 @@ plugins:
 # Site metadata
 brand:             asteroidos.org
 title:             AsteroidOS
-lead:              AsteroidOS - An open-source operating system for smartwatches.
+lead:              AsteroidOS - An open-source Linux distribution for smartwatches.
 description: >
-  AsteroidOS is an open-source operating system for smartwatches.
+  AsteroidOS is an open-source Linux distribution for smartwatches.
 
 # URLs
 homepage:          http://asteroidos.org

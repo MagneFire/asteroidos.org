@@ -1,0 +1,36 @@
+//
+// Install watch transitions
+// --------------------------------------------------
+
+.watch-container {
+  width: 100%;
+  height: 0;
+  position: relative;
+  text-align: left;
+}
+
+.watch-element {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: anim 3s infinite;
+}
+
+each(range(1, 9, 1), {
+  .watch-element:nth-child(@{value}n) {
+    animation-delay: (@value - 1) * 3s;
+  }
+
+  .watch-element:nth-last-child(@{value}n):first-child, 
+  .watch-element:nth-last-child(@{value}n):first-child ~ .watch-element {
+    animation-duration: @value * 3s;
+  }
+});
+
+@keyframes anim {
+  0% { opacity: 0; z-index: 100;}
+  15% { opacity: 1;}
+  50% { opacity: 1;}
+  100% { opacity: 0; z-index: 1;}
+}

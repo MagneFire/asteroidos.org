@@ -110,6 +110,7 @@
     },
     {
       "name":"firefish",
+      "othernames": "ray",
       "models": [
         "Fossil Gen 4"
       ],
@@ -350,6 +351,7 @@
     },
     {
       "name":"sparrow",
+      "othernames": "wren",
       "models": [
         "Asus Zenwatch 2"
       ],

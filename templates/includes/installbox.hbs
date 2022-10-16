@@ -1,5 +1,13 @@
 {{#with this}}
   <a href="{{#if reference}}{{reference}}{{else}}{{name}}{{/if}}"><div class="install-box">
+    {{#if othernames}}
+    <div class="watch-container">
+      <img class="watch-element" src="../public/img/{{name}}.png" width="100%">
+      {{#othernames}}
+        <img class="watch-element" src="../public/img/{{.}}.png" width="100%">
+      {{/othernames}}
+    </div>
+    {{/if}}
     <img src="../public/img/{{name}}.png" width="100%"><br>
     <b>{{models}}</b><br>({{name}}{{#if othernames}},{{othernames}}{{/if}})<br>
     <i>Support: {{#starString stars 5}}{{/starString}}</i>

@@ -1,6 +1,7 @@
 ---
 title: News RSS
 slug: rss
+layout: rss
 ---
 
 {{#withSort post 'data.posted'}}
